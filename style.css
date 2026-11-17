@@ -1,0 +1,192 @@
+/* Mini-libreria — Settimana VII Giorno II */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #1a1a1a;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-header {
+  background: hsl(220, 50%, 25%);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.site-header h1 { margin: 0 0 8px; }
+.site-header p  { margin: 0; opacity: 0.85; }
+
+.form-section {
+  background: white;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.form-section h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: hsl(220, 50%, 25%);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: hsl(220, 50%, 20%);
+}
+
+.lista-section {
+  margin-top: 28px;
+}
+
+.lista-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.lista-header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.btn-svuota {
+  background: transparent;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn-svuota:hover {
+  background: #ffebee;
+}
+
+.info-storage {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+#lista-libri {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lista-libri li {
+  background: white;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid transparent;
+}
+
+#lista-libri li.letto {
+  border-left-color: #2e7d32;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-titolo {
+  font-weight: 600;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: normal;
+  color: #555;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.azioni {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-azione {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-azione:hover {
+  background: #f0f0f0;
+}
+
+.testo-letto {
+  font-size: 0.85rem;
+  color: #2e7d32;
+  font-weight: 600;
+}
